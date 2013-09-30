@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="main_margin">7dp</dimen>
+    <dimen name="main_sidebar_width">180dp</dimen>
+    <dimen name="text_drawable_padding">8dp</dimen>
+
+
+    <dimen name="form_header_size">20sp</dimen>
+
+    <dimen name="form_title_size">20sp</dimen>
+    <dimen name="form_text_size">20sp</dimen>
+    <dimen name="form_hint_size">18sp</dimen>
+    <dimen name="form_error_msg_size">18sp</dimen>
+    <dimen name="form_spinner_text_size">20sp</dimen>
+    <dimen name="form_title_right_margin">15dp</dimen>
+    <integer name="form_text_size_program">20</integer>
+
+    <dimen name="report_radio_size">23sp</dimen>
+    <dimen name="report_table_header_size">20sp</dimen>
+    <dimen name="report_table_size">22sp</dimen>
+
+    <dimen name="calculator_number_size">25sp</dimen>
+    <dimen name="calculator_btn_width">65dp</dimen>
+    <dimen name="calculator_btn_height">50sp</dimen>
+
+    <dimen name="shadow_size">8dp</dimen>
+
+
+
+</resources>
