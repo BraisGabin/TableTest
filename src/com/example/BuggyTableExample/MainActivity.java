@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.inqbarna.tablefixheaders.TableFixHeaders;
@@ -141,8 +142,16 @@ public class MainActivity extends Activity{
             }
             convertView.setBackgroundResource((row + 1) % 5 == 0 ? R.drawable.bg_table_highlight : R.drawable.bg_table_normal);
             // Start from the third column
-            ((TextView) convertView.findViewById(android.R.id.text1))
-                    .setText(mData.displayTable.get(column + 2).textData.get(row));
+            String value = mData.displayTable.get(column + 2).textData.get(row);
+            final TextView t = ((TextView) convertView.findViewById(android.R.id.text1));
+            t.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					System.out.println(((TextView)v).getText());
+				}
+			});
+            t.setText(value);
             return convertView;
         }
     }
